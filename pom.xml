@@ -28,6 +28,11 @@
 			<version>5.10.0</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.riku</groupId>
+			<artifactId>tsdetectplugin</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 
 	</dependencies>
 
@@ -50,6 +55,22 @@
 				<version>2.22.0</version>
 			</plugin>
 
+			<plugin>
+				<groupId>com.riku</groupId>
+				<artifactId>tsdetectplugin</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>TSDetect-HTML</goal>
+						</goals>
+						<configuration>
+							<path>Ejemplo.csv</path>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
 		</plugins>
 	</build>
 
